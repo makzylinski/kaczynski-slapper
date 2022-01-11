@@ -1,3 +1,24 @@
+$shop-height: 100px;
+
 .upgrades {
-    width: 19%;
+    width: 20%;
+    border: 2px solid magenta;
+
+    &__shop {
+        height: $shop-height;
+        border: 2px solid red;
+    }
+
+    &__buildings {
+        height: calc(100% - $shop-height);
+
+        .selectors {
+            height: 50px;
+            border: 2px solid black;
+
+            .operations > span {
+                display: block;
+            }
+        }
+    }
 }

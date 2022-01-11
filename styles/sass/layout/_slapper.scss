@@ -3,6 +3,8 @@ $slapper-width: 30%;
 .slapper {
     height: 100vh;
     width: $slapper-width;
+    border: 2px solid lawngreen;
+    
     &__info {
         text-align: center;
         z-index: 100;
