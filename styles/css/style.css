@@ -1,7 +1,8 @@
 html, *, body {
   width: 100%;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 128, 0.5); }
 
 .slapper-container {
   display: flex; }
@@ -41,3 +42,19 @@ html, *, body {
       border: 2px solid black; }
       .upgrades__buildings .selectors .operations > span {
         display: block; }
+  .upgrades__buildings-items {
+    border: 2px solid black;
+    display: flex;
+    align-items: center; }
+    .upgrades__buildings-items .thumbnail {
+      width: 50px;
+      height: 50px; }
+      .upgrades__buildings-items .thumbnail img {
+        width: 50px;
+        height: 50px; }
+    .upgrades__buildings-items .info {
+      border: 1px solid gray; }
+      .upgrades__buildings-items .info .name {
+        font-size: 22px; }
+    .upgrades__buildings-items .quantity {
+      text-align: right; }

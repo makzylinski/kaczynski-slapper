@@ -21,4 +21,33 @@ $shop-height: 100px;
             }
         }
     }
+
+
+    &__buildings-items {
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        .thumbnail {
+            width: 50px;
+            height: 50px;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .info {
+            border: 1px solid gray;
+
+            .name {
+                font-size: 22px;
+            }
+
+        }
+
+        .quantity {
+            text-align: right;
+        }
+    }
 }
