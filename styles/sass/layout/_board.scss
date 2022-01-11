@@ -1,4 +1,10 @@
 .board {
-    display: inline-block;
     width: 50%;
+    height: 100vh;
+    border: 2px solid green;
+
+    &__info {
+        height: 100px;
+        border: 2px solid blue;
+    }
 }

@@ -1,12 +1,8 @@
 $slapper-width: 30%;
 
 .slapper {
-    display: inline-block;
-    width: $slapper-width;
-    border: 2px solid red;
-    position: relative;
     height: 100vh;
-
+    width: $slapper-width;
     &__info {
         text-align: center;
         z-index: 100;
