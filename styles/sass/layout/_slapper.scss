@@ -1,0 +1,23 @@
+
+
+.slapper {
+    display: inline-block;
+    width: 30%;
+    border: 2px solid red;
+
+    &__info {
+        // display: flex;
+        // position: absolute;
+        // width: 30%;
+        // left: 50%;
+        // top: 50%;
+        // transform: translateX(-50%);
+    }
+
+    &__head {
+        width: 350px;
+        height: 350px;
+        border: 2px solid red;
+        margin: 1rem auto;
+    }
+}
