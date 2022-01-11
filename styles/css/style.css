@@ -6,12 +6,18 @@ html, *, body {
 .slapper {
   display: inline-block;
   width: 30%;
-  border: 2px solid red; }
+  border: 2px solid red;
+  position: relative;
+  height: 100vh; }
+  .slapper__info {
+    text-align: center;
+    z-index: 100;
+    margin: 4rem 0; }
   .slapper__head {
     width: 350px;
     height: 350px;
     border: 2px solid red;
-    margin: 1rem auto; }
+    margin: 4rem auto; }
 
 .board {
   display: inline-block;

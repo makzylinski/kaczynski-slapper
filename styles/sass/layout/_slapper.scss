@@ -1,23 +1,22 @@
-
+$slapper-width: 30%;
 
 .slapper {
     display: inline-block;
-    width: 30%;
+    width: $slapper-width;
     border: 2px solid red;
+    position: relative;
+    height: 100vh;
 
     &__info {
-        // display: flex;
-        // position: absolute;
-        // width: 30%;
-        // left: 50%;
-        // top: 50%;
-        // transform: translateX(-50%);
+        text-align: center;
+        z-index: 100;
+        margin: 4rem 0;
     }
 
     &__head {
         width: 350px;
         height: 350px;
         border: 2px solid red;
-        margin: 1rem auto;
+        margin: 4rem auto;
     }
 }
