@@ -1,4 +1,4 @@
-import AppState from "../game_state/AppState.js";
+import AppState from "./game_state/AppState.js";
 
 const ADD = 'add';
 const SPC = 'spc';

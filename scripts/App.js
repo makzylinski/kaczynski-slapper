@@ -1,8 +1,9 @@
-import AppState from "./game_state/AppState.js";
-import Slapper from "./slapper/Slapper.js";
+import News from "./News.js";
+import Slapper from "./Slapper.js";
 
 export default class App {
     static init() {
         const slapper = new Slapper();
+        const news = new News();
     };
 }
