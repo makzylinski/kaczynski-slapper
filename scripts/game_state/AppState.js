@@ -8,18 +8,18 @@ export default class AppState {
         this.init();
     }
 
+    init() {
+        this.slapsInterval();
+        this.getSlapsData();
+        this.gameAutosave();
+    }
+
     calculateSlaps(mode, slapType) {
         if (mode === 'add') {
             this.addValue(slapType);
         } else if (mode === 'subtract') {
             this.subtractValue(slapType);
         }
-    }
-
-    init() {
-        this.slapsInterval();
-        this.getSlapsData();
-        this.gameAutosave();
     }
 
     slapsInterval() {

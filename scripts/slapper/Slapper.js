@@ -17,13 +17,11 @@ export default class Slapper {
     init() {
         this.slapArea.addEventListener('click', this.onSlap);
         this.slapperName.addEventListener('keyup', this.onSlapperNameChange);
-
-        this.slapperName.innerText = this.appState._sName;
+        this.slapperName.value = this.appState._sName;
         this.dataSyncInterval();
     }
 
     onSlapperNameChange = () => {
-        console.dir(this.slapperName)
         this.appState._sName = this.slapperName.value;
     }
 
@@ -33,9 +31,8 @@ export default class Slapper {
 
     dataSyncInterval() {
         setInterval(() => {
-            this.slapperName.value = this.appState._sName;
             this.slapsOverall.textContent = this.appState._sOverall;
             
-        }, 1000);
+        }, 100);
     }
 }
