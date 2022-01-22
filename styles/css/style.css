@@ -3,6 +3,7 @@ html, *, body {
   margin: 0;
   box-sizing: border-box;
   background-color: rgba(255, 255, 128, 0.5);
+  font-family: "Press Start 2P", cursive;
 }
 
 .slapper-container {
