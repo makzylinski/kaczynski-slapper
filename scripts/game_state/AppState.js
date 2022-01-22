@@ -1,6 +1,6 @@
 export default class AppState {
     _sOverall = 0; // slaps overall
-    _sps = 0; // slaps per second
+    _sps = 2; // slaps per second
     _spc = 1; // slaps per click
 
     constructor() {
@@ -19,15 +19,22 @@ export default class AppState {
     }
 
     init() {
-        this.saveSlapsData();
-        // this.slapsInterval();
+        this.slapsInterval();
+        this.getSlapsData();
+        this.gameAutosave();
     }
 
     slapsInterval() {
         const slapInterval = setInterval(() => {
-            this._sOverall += this.addValue('sps');
-            console.log('interval')
+            this.addValue('sps', this._sps);
+            console.log(this._sOverall)
         }, 1000)
+    }
+
+    gameAutosave() {
+        const autosaveInterval = setInterval(() => {
+            this.saveSlapsData();
+        }, 10000)
     }
 
     addValue(slapType) {
@@ -53,11 +60,12 @@ export default class AppState {
     }
 
     saveSlapsData() {
-        localStorage.setItem('slapsData', JSON.stringify({_spc: this._spc, _sps: this._sps}));
+        localStorage.setItem('slapsData', JSON.stringify({_sOverall: this._sOverall, _spc: this._spc, _sps: this._sps}));
     }
 
     getSlapsData() {
         const localSlapsData = JSON.parse(localStorage.getItem('slapsData'));
+        this._sOverall = localSlapsData._sOverall;
         console.log(localSlapsData);
     }
 }
