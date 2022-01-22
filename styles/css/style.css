@@ -37,8 +37,9 @@ html, *, body {
   overflow: hidden;
 }
 .board__info--active {
-  font-size: 22px;
+  font-size: 28px;
   animation: marquee 10s linear infinite;
+  line-height: 100px;
 }
 @keyframes marquee {
   from {

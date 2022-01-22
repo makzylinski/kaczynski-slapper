@@ -1,7 +1,6 @@
 export default class News {
     infoArea = document.querySelector('.board__info--active');
     newsData = [];
-    currentElement = null;
 
     constructor() {
         this.loadNews();
@@ -12,14 +11,20 @@ export default class News {
             return data.json();
         }).then(jsonData => {
             this.newsData = jsonData;
-            console.log(jsonData)
 
-            this.pickNews();
+            this.newsChange();
         })
     }
 
     pickNews() {
-        
+        const randomNewsIndex = Math.floor(Math.random() * this.newsData.news.length);
+        this.infoArea.innerText = this.newsData.news[randomNewsIndex].value;
+    }
+
+    newsChange() {
+        const newsInterval = setInterval(() => {
+            this.pickNews();
+        }, 10000)
     }
     
 }
