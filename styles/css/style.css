@@ -2,59 +2,79 @@ html, *, body {
   width: 100%;
   margin: 0;
   box-sizing: border-box;
-  background-color: rgba(255, 255, 128, 0.5); }
+  background-color: rgba(255, 255, 128, 0.5);
+}
 
 .slapper-container {
-  display: flex; }
+  display: flex;
+}
 
 .slapper {
   height: 100vh;
   width: 30%;
-  border: 2px solid lawngreen; }
-  .slapper__info {
-    text-align: center;
-    z-index: 100;
-    margin: 4rem 0; }
-  .slapper__head {
-    width: 350px;
-    height: 350px;
-    border: 2px solid red;
-    margin: 4rem auto; }
+  border: 2px solid lawngreen;
+}
+.slapper__info {
+  text-align: center;
+  z-index: 100;
+  margin: 4rem 0;
+}
+.slapper__head {
+  width: 80%;
+  height: 350px;
+  border: 2px solid red;
+  margin: 4rem auto;
+}
 
 .board {
   width: 50%;
   height: 100vh;
-  border: 2px solid green; }
-  .board__info {
-    height: 100px;
-    border: 2px solid blue; }
+  border: 2px solid green;
+}
+.board__info {
+  height: 100px;
+  border: 2px solid blue;
+}
 
 .upgrades {
   width: 20%;
-  border: 2px solid magenta; }
-  .upgrades__shop {
-    height: 100px;
-    border: 2px solid red; }
-  .upgrades__buildings {
-    height: calc(100% - $shop-height); }
-    .upgrades__buildings .selectors {
-      height: 50px;
-      border: 2px solid black; }
-      .upgrades__buildings .selectors .operations > span {
-        display: block; }
-  .upgrades__buildings-items {
-    border: 2px solid black;
-    display: flex;
-    align-items: center; }
-    .upgrades__buildings-items .thumbnail {
-      width: 50px;
-      height: 50px; }
-      .upgrades__buildings-items .thumbnail img {
-        width: 50px;
-        height: 50px; }
-    .upgrades__buildings-items .info {
-      border: 1px solid gray; }
-      .upgrades__buildings-items .info .name {
-        font-size: 22px; }
-    .upgrades__buildings-items .quantity {
-      text-align: right; }
+  border: 2px solid magenta;
+}
+.upgrades__shop {
+  height: 100px;
+  border: 2px solid red;
+}
+.upgrades__buildings {
+  height: calc(100% - 100px);
+}
+.upgrades__buildings .selectors {
+  height: 50px;
+  border: 2px solid black;
+}
+.upgrades__buildings .selectors .operations > span {
+  display: block;
+}
+.upgrades__buildings-items {
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+}
+.upgrades__buildings-items .thumbnail {
+  width: 50px;
+  height: 50px;
+}
+.upgrades__buildings-items .thumbnail img {
+  width: 50px;
+  height: 50px;
+}
+.upgrades__buildings-items .info {
+  border: 1px solid gray;
+}
+.upgrades__buildings-items .info .name {
+  font-size: 22px;
+}
+.upgrades__buildings-items .quantity {
+  text-align: right;
+}
+
+/*# sourceMappingURL=style.css.map */
