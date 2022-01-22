@@ -1,4 +1,4 @@
-import AppState from "./AppState.js";
+import AppState from "./game_state/AppState.js";
 import Slapper from "./slapper/Slapper.js";
 
 export default class App {
@@ -7,8 +7,7 @@ export default class App {
         
         const state = new AppState();
         const c = new Slapper();
-        
-        state.saveSlapsData();
+
         state.getSlapsData();
     }
 
