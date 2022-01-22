@@ -1,8 +1,3 @@
-import AppState from "./state.js";
-import Slapper from "./slapper/slapper.js";
+import App from "./App.js";
 
-const state = new AppState();
-const c = new Slapper();
-
-state.saveSlapsData();
-state.getSlapsData();
+const app = new App();
