@@ -9,7 +9,9 @@
         overflow: hidden;
 
         &--active {
-            font-size: 28px;
+            text-align: left;
+            width: 1600px;
+            font-size: 18px;
             animation: marquee 10s linear infinite;
             line-height: 100px;
         }
