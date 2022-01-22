@@ -12,6 +12,7 @@ export default class News {
         }).then(jsonData => {
             this.newsData = jsonData;
 
+            this.pickNews();
             this.newsChange();
         })
     }
