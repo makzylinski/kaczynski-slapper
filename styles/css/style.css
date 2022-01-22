@@ -40,7 +40,7 @@ html, *, body {
 .board__info--active {
   text-align: left;
   width: 1600px;
-  font-size: 18px;
+  font-size: 16px;
   animation: marquee 10s linear infinite;
   line-height: 100px;
 }
