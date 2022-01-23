@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass styles/sass/main.scss styles/css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/makzylinski/kaczynski-slapper/issues"
   },
-  "homepage": "https://github.com/makzylinski/kaczynski-slapper#readme"
+  "homepage": "https://github.com/makzylinski/kaczynski-slapper#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
 }

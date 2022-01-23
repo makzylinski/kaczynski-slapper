@@ -1,0 +1,102 @@
+html, *, body {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 128, 0.5);
+  font-family: "Press Start 2P", cursive;
+}
+
+.slapper-container {
+  display: flex;
+}
+
+.slapper {
+  height: 100vh;
+  width: 30%;
+  border: 2px solid lawngreen;
+}
+.slapper__info {
+  text-align: center;
+  z-index: 100;
+  margin: 4rem 0;
+}
+.slapper__head {
+  width: 80%;
+  height: 350px;
+  border: 2px solid red;
+  margin: 4rem auto;
+}
+
+.board {
+  width: 50%;
+  height: 100vh;
+  border: 2px solid green;
+}
+.board__info {
+  height: 100px;
+  border: 2px solid blue;
+  overflow: hidden;
+}
+.board__info--active {
+  text-align: left;
+  width: 1600px;
+  font-size: 16px;
+  animation: marquee 10s linear infinite;
+  line-height: 100px;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.upgrades {
+  width: 20%;
+  border: 2px solid magenta;
+}
+.upgrades__shop {
+  height: 100px;
+  border: 2px solid red;
+}
+.upgrades__buildings {
+  height: calc(100% - 100px);
+}
+.upgrades__buildings .selectors {
+  height: 50px;
+  border: 2px solid black;
+}
+.upgrades__buildings .selectors .operations > span {
+  display: block;
+}
+.upgrades__buildings-list {
+  list-style-type: none;
+  padding: 0;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.upgrades__buildings-list-item {
+  display: flex;
+  align-items: center;
+}
+.upgrades__buildings-list .thumbnail {
+  width: 50px;
+  height: 50px;
+}
+.upgrades__buildings-list .thumbnail img {
+  width: 50px;
+  height: 50px;
+}
+.upgrades__buildings-list .info {
+  border: 1px solid gray;
+}
+.upgrades__buildings-list .info .name {
+  font-size: 22px;
+}
+.upgrades__buildings-list .quantity {
+  text-align: right;
+}
+
+/*# sourceMappingURL=style.css.map */

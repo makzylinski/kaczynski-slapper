@@ -4,12 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/scripts/index.js" defer></script>
-    <link rel="stylesheet" href="styles/main.css">
+    <script src="./scripts/index.js" defer type="module"></script>
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link data-noprefix href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <title>Ka****ski slapper</title>
 </head>
 <body>
-    dasdas
+    <div class="slapper-container">
+        <div class="slapper">
+            <div class="slapper__info">
+                <div class="name">
+                    <input id="slapper-name" type="text" title="name">
+                </div>
+                <div class="score">0</div>
+                <div class="per-second">0 sps</div>
+            </div>
+
+            <div class="slapper__head">
+
+            </div>
+        </div>
+
+        <div class="board">
+            <div class="board__info">
+                <p class="board__info--active"></p>
+            </div>
+            <div class="board__main">
+                main
+            </div>
+        </div>
+
+        <div class="upgrades">
+            <div class="upgrades__shop">ite</div>
+            <div class="upgrades__buildings">
+                <div class="selectors">
+                    <div class="operations">
+                        <span>Buy</span>
+                        <span>Sell</span>
+                    </div>
+                </div>
+                <ul class="upgrades__buildings-list">
+                    <li class="upgrades__buildings-list-item">
+                        <div class="thumbnail">
+                            <img src="./assets/julka.png"
+                            alt="">
+                                <!-- TODO img 64x64px -->
+                        </div>
+                        
+                        <div class="info">
+                            <div class="name">name</div>
+                            <div class="cost">cost</div>
+                        </div>
+                        <div class="quantity">123</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

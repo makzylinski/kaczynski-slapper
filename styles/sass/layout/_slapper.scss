@@ -1,0 +1,20 @@
+$slapper-width: 30%;
+
+.slapper {
+    height: 100vh;
+    width: $slapper-width;
+    border: 2px solid lawngreen;
+    
+    &__info {
+        text-align: center;
+        z-index: 100;
+        margin: 4rem 0;
+    }
+
+    &__head { 
+        width: 80%;
+        height: 350px;
+        border: 2px solid red;
+        margin: 4rem auto;
+    }
+}
