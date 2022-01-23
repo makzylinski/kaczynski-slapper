@@ -71,26 +71,31 @@ html, *, body {
 .upgrades__buildings .selectors .operations > span {
   display: block;
 }
-.upgrades__buildings-items {
+.upgrades__buildings-list {
+  list-style-type: none;
+  padding: 0;
   border: 2px solid black;
+  cursor: pointer;
+}
+.upgrades__buildings-list-item {
   display: flex;
   align-items: center;
 }
-.upgrades__buildings-items .thumbnail {
+.upgrades__buildings-list .thumbnail {
   width: 50px;
   height: 50px;
 }
-.upgrades__buildings-items .thumbnail img {
+.upgrades__buildings-list .thumbnail img {
   width: 50px;
   height: 50px;
 }
-.upgrades__buildings-items .info {
+.upgrades__buildings-list .info {
   border: 1px solid gray;
 }
-.upgrades__buildings-items .info .name {
+.upgrades__buildings-list .info .name {
   font-size: 22px;
 }
-.upgrades__buildings-items .quantity {
+.upgrades__buildings-list .quantity {
   text-align: right;
 }
 
