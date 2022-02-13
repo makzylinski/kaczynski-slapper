@@ -1,4 +1,4 @@
-export default class AppState {
+export default class SlapsState {
     _sName = 'Slapper'; // slapper name
     _sOverall = 0; // slaps overall
     _sps = 2; // slaps per second

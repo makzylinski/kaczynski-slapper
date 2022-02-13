@@ -8,6 +8,5 @@ export default class App {
         const slapper = new Slapper();
         const news = new News();
         const upgrades = new Upgrades();
-        const test = new NewUpgrade();     // to delete
     };
 }
