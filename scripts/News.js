@@ -7,11 +7,10 @@ export default class News {
     }
 
     loadNews() {
-        fetch("../data/news.json").then(data => {
+        fetch("assets/data/news.json").then(data => {
             return data.json();
         }).then(jsonData => {
             this.newsData = jsonData;
-
             this.pickNews();
             this.newsChange();
         })

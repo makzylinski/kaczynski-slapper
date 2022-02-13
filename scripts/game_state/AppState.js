@@ -1,5 +1,5 @@
 export default class AppState {
-    _sName = ''; // slapper name
+    _sName = 'Slapper'; // slapper name
     _sOverall = 0; // slaps overall
     _sps = 2; // slaps per second
     _spc = 1; // slaps per click
@@ -67,7 +67,9 @@ export default class AppState {
 
     getSlapsData() {
         const localSlapsData = JSON.parse(localStorage.getItem('slapsData'));
-        this._sName = localSlapsData._sName;
+        console.log(localSlapsData)
+        if (!localSlapsData) return;
+        this._sName = localSlapsData._sName ? localSlapsData._sName : 'Slapper';
         this._sOverall = localSlapsData._sOverall;
         this._sps = localSlapsData._sps;
         this._spc = localSlapsData._spc;
